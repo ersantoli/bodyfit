@@ -1,0 +1,220 @@
+:root{
+    --vermelho:#e50914;
+    --preto:#0c0c0c;
+    --verde: #39ff14;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Elementos base*/
+body{
+  background: var(--preto);  
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+header .container{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header .logo{
+    margin-left: 5px;
+    font-family: Arial Black, Helvetica, sans-serif;
+    color: var(--vermelho);
+    font-size: 40px;
+
+}
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: #fff;
+}
+/*Filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(12, 12, 12, 0.5),rgba(11, 11, 11, 0.5) 100%), url('mg/banner.jpg');
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .descricao{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, 0.5) ;
+    border: 3px solid var(--verde);
+    color:var(--verde);
+    font-weight: 900;
+    margin-top: 30px;
+    padding: 10px 80px;
+    margin-right: 15px;
+    font-size: 17px ;
+    border-radius: 5px;
+    
+   transition:  .5s ease all;
+}
+.botao:hover{
+    border: 1px solid rgb(15, 15, 15);
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: #141414;
+    box-shadow: 3px 3px 3px black;
+}
+.botao i{
+    margin-right: 5px;
+
+}
+.container{
+    margin-left: 20px;
+}
+.filme-principal .container{
+        width: 70%;
+}
+
+
+
+
+.descricao.show p{
+    transform: scale(1);
+    }
+.descricao p{
+    width: 90%;
+    min-width: 900px;    
+    transform: scale(0);
+    
+    color: aliceblue;
+    outline: none;
+    transition: all 0.3s ;
+    backdrop-filter: blur(50px);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    }
+   
+    .offer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 450px;
+        padding: 30px;
+        align-items: center;
+    }
+    .offer .botao{
+        max-width: 190px;
+        padding: 15px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        
+    }
+    
+    .categories{
+        display: flex;
+        justify-content: space-around;
+        max-width: 1200px;
+    }
+    .habilities{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+    }
+    .habilities img{
+        border: 2px solid var(--verde);
+        width: 170px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    .habilities h3{
+        margin-top: 10px;
+        background-color: var(--verde);
+        padding: 2px;
+        border-radius: 10px;
+        font-weight: 900;
+        color: #0c0c0c;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .habilities p{
+        margin: 20px;
+    }
+    hr{
+        border-color: var(--verde);
+        width: 90%;
+        margin: 0 auto;
+    }
+    .sytt{
+        text-align: center;
+        margin: 50px;
+        font-size: 5rem;
+    }
+    i{color: var(--verde);
+
+    }
+    .member{
+        display: flex;
+        flex-direction: row;
+        max-width: 1300px;
+        
+    }
+    .bgm{
+        
+        margin: 100px auto;
+        width:500px;
+        color: var(--verde);
+        font-size: 3rem;
+        
+    }
+    .checked{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-content:space-around ;
+        height: 600px;
+        margin-top: 150px;
+        
+    }
+    li{
+        list-style: none;
+        margin-top: 10px;
+    }
+    .colu{
+        display: flex;
+        flex-direction: row;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color:black;
+        justify-content: space-around;
+        border-top: 2px solid var(--verde);
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        border: 2px solid black;
+        margin-top: 30px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    
