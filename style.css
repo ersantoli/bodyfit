@@ -13,26 +13,32 @@ body{
   background: var(--preto);  
   font-family: 'Times New Roman', Times, serif;
   color: white;
+ 
 }
 header .container{
-    border: 1px solid black;
+   
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    border: 2px solid aqua;
+    font-size: 1rem;
     
 }
+
 header .logo{
-    margin-left: 5px;
+    
     font-family: Arial Black, Helvetica, sans-serif;
     color: var(--vermelho);
-    font-size: 40px;
+    font-size: 5VW;
 
 }
 header nav a{
     text-decoration: none;
     color: #aaa;
-    margin-right: 10px;
+    margin-right: 1px;
+    
 }
 header nav a:hover{
     color: #fff;
@@ -43,14 +49,29 @@ header nav a:hover{
     background:linear-gradient(rgba(12, 12, 12, 0.5),rgba(11, 11, 11, 0.5) 100%), url('mg/banner.jpg');
     height: 500px;
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    width: 100%;
+    
 }
-.filme-principal .descricao{
-    margin-bottom: 30px;
-    margin-top: 10px;
+.titulo{
+    color: #39ff14;
+}
+
+.MENFLYING {
+display: flex;
+justify-content: center;
+}
+
+.container .botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 100%;
 }
 
 .botao{
@@ -60,10 +81,8 @@ header nav a:hover{
     font-weight: 900;
     margin-top: 30px;
     padding: 10px 80px;
-    margin-right: 15px;
-    font-size: 17px ;
-    border-radius: 5px;
-    
+     font-size: 17px ;
+    border-radius: 5px;    
    transition:  .5s ease all;
 }
 .botao:hover{
@@ -73,72 +92,52 @@ header nav a:hover{
     color: #141414;
     box-shadow: 3px 3px 3px black;
 }
-.botao i{
-    margin-right: 5px;
 
-}
-.container{
-    margin-left: 20px;
-}
-.filme-principal .container{
-        width: 70%;
-}
-
-
-
-
-.descricao.show p{
-    transform: scale(1);
-    }
-.descricao p{
-    width: 90%;
-    min-width: 900px;    
-    transform: scale(0);
-    
-    color: aliceblue;
-    outline: none;
-    transition: all 0.3s ;
-    backdrop-filter: blur(50px);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
-    }
+.offer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    padding: 30px;
+    align-items: center;
    
-    .offer {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto;
-        width: 450px;
-        padding: 30px;
-        align-items: center;
-    }
-    .offer .botao{
-        max-width: 190px;
-        padding: 15px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        
-    }
+}
+.offer .botao{
+    max-width: 190px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+} 
+   
     
     .categories{
         display: flex;
-        justify-content: space-around;
-        max-width: 1200px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+       
+     
+        
     }
     .habilities{
         display: flex;
         flex-direction: column;
-        width: 350px;
+        border-top: 5px solid rgb(11, 235, 22);
         justify-content: center;
         text-align: center;
         align-items: center;
+     
+        
         
     }
     .habilities img{
         border: 2px solid var(--verde);
-        width: 170px;
-        height: 150px;
+        margin: 0;
+        padding: 0;        
         border-radius: 50%;
+        width: 300px;
     }
     .habilities h3{
         margin-top: 10px;
@@ -167,26 +166,30 @@ header nav a:hover{
     }
     .member{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         max-width: 1300px;
         
     }
     .bgm{
         
-        margin: 100px auto;
-        width:500px;
+        margin: 0 auto;
+        width:100%;
         color: var(--verde);
-        font-size: 3rem;
+        font-size: 2.2rem;
+        padding-top: 20px;
         
     }
     .checked{
         display: flex;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        justify-content:space-around ;
-        height: 600px;
-        margin-top: 150px;
+        height: 500px;
+        margin-top: 50px;  
+        
+     
+      
         
     }
     li{
@@ -196,6 +199,11 @@ header nav a:hover{
     .colu{
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+        padding: 1px;
     }
     footer{
         display: flex;
@@ -215,6 +223,53 @@ header nav a:hover{
         align-items: center;
         margin-bottom: 40px;
         text-align: center;
+        border-top: 2px solid var(--verde);
+    }
+    .cardcredit{
+        width: 100%;
+        display: flex;
+        justify-content:center;
+
+    }
+    @media (max-width: 400px) {
+  
+        header .container{
+            width: 100%;
+            border: 2px solid yellowgreen;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+           
+        }
+        .menu-nav a{
+            display: felx;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;         
+
+
+        }
+        .filme-principal{
+            width: 100%;
+        }
+        .MENFLYING img{
+            width: 350px;
+        }
+        .filme-principal{
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .habilities img{
+        width: 100px;
+        }
+        .cardcredit{
+            width: 100%;
+            display: flex;
+            justify-content:center;
+
+        }
+        
     }
     
     
