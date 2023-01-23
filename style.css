@@ -6,11 +6,13 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: var(--preto); 
+    color: #fff;
 }
+
 /*Elementos base*/
 body{
-  background: var(--preto);  
+  background-color: var(--preto);  
   font-family: 'Times New Roman', Times, serif;
   color: white;
  
@@ -21,9 +23,10 @@ header .container{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    border: 2px solid aqua;
+   background-color: var(--preto);
+    border: 2px solid rgb(8, 241, 241);
     font-size: 1rem;
+    
     
 }
 
@@ -57,13 +60,20 @@ header nav a:hover{
     width: 100%;
     
 }
+.filme-principal .container{
+background: none;
+}
 .titulo{
     color: #39ff14;
+    background: none;
+
 }
 
 .MENFLYING {
 display: flex;
 justify-content: center;
+background-color:none;
+
 }
 
 .container .botoes{
@@ -101,6 +111,8 @@ justify-content: center;
     width: 100%;
     padding: 30px;
     align-items: center;
+    background-color: var(--preto); 
+    color: #fff;
    
 }
 .offer .botao{
@@ -117,6 +129,8 @@ justify-content: center;
         justify-content: center;
         align-items: center;
         width: 100%;
+        background-color: var(--preto); 
+        color: #fff;
        
      
         
@@ -160,6 +174,8 @@ justify-content: center;
         text-align: center;
         margin: 50px;
         font-size: 5rem;
+        background-color: var(--preto); 
+        color: #fff;
     }
     i{color: var(--verde);
 
@@ -171,7 +187,7 @@ justify-content: center;
         
     }
     .bgm{
-        
+        text-align: center;
         margin: 0 auto;
         width:100%;
         color: var(--verde);
@@ -233,17 +249,27 @@ justify-content: center;
     }
     @media (max-width: 400px) {
   
+        *{
+            background-color: #0c0c0c;
+        }
+        h2{
+            color: White;
+        }
+        header .logo{
+            text-align: center;
+        }           
+           
+        
         header .container{
-            width: 100%;
-            border: 2px solid yellowgreen;
-            padding: 0;
-            margin: 0;
+            border: 2px solid rgb(61, 232, 9);
             display: flex;
             align-items: center;
+            justify-content: space-between;
+          
            
         }
         .menu-nav a{
-            display: felx;
+            display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: row;         
@@ -251,7 +277,21 @@ justify-content: center;
 
         }
         .filme-principal{
-            width: 100%;
+            display: flex;
+            margin-top: 0;
+            justify-content: center;
+            align-items: center;
+          
+            background-color: #0c0c0c;
+        }
+        .filme-principal .container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 180px;
+        font-size: 1rem;
+        background-color: #0c0c0c;
+        
+      
         }
         .MENFLYING img{
             width: 350px;
